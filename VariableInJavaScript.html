@@ -1,0 +1,45 @@
+<html>
+	<head>
+	<title> javascript </title>
+	
+	</head>
+
+
+	<body>
+		<input type="text" id="textinput">
+		<button id="textchange">updade</button>
+
+		<p id="textp"> There is a text </p>
+
+	
+	<script type="text/javascript">
+		
+	//var x=10;
+	//alert(x);	
+
+			document.getElementById("textchange").onclick=function(){
+
+				var textEntered=""
+
+				var hello="Hello"
+
+				textEntered=document.getElementById("textinput").value;
+				 
+				document.getElementById("textp").innerHTML=" "+hello+textEntered;
+
+			}
+
+
+	   
+
+	</script>
+	 
+	
+	
+	
+	
+	</body>
+
+
+ 
+</html>
