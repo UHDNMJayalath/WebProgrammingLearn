@@ -1,0 +1,38 @@
+<html>
+	<head>
+	<title> javascript </title>
+	
+	</head>
+
+
+	<body>
+
+     <p>Enter your User Name</p>
+     <p><input type="text" id="userName"></p>
+     <p><button id="userNameButton">Enter</button></p>   
+	
+	<script type="text/javascript">
+
+        document.getElementById("userNameButton").onclick=function(){
+
+            var userNameEntered=document.getElementById("userName").value;
+            var userName ="hackinglk";
+
+            if(userName==userNameEntered){
+                alert("You are in")
+            }
+            else{
+                alert("incorrect Try Again");
+            }
+        }
+
+
+	</script>
+	 
+	 
+	
+	</body>
+
+
+
+</html>
