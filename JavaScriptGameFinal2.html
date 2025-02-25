@@ -1,0 +1,74 @@
+<html>
+	<head>
+	<title> javascript Final Game</title>
+
+    <style type="text/css">
+
+        #shape{
+
+            width:100px;
+            height: 100px;
+            background-color: green;
+            display: none;
+            position: relative;
+        }
+
+    </style>
+	
+	</head>
+
+
+	<body>
+
+    <p> You Get <span id="time"></span></p>    
+    <div id="shape"></div >
+
+	<script type="text/javascript">
+
+    var start =new Date().getTime();    
+
+    function shapeApper(){
+
+        var top = Math.random() * 350;
+        var left = Math.random() * 350;
+        document.getElementById("shape").style.top = top + "px";
+        document.getElementById("shape").style.left = top + "px";
+        document.getElementById("shape").style.display="block";
+        start=new Date().getTime();
+
+    }
+
+    function shapeApperDelay(){
+
+        setTimeout(shapeApper,Math.random()*1500);
+
+    }
+
+    shapeApperDelay();
+
+
+	
+    document.getElementById("shape").onclick=function(){
+
+        document.getElementById("shape").style.display="none";
+
+        var end = new Date().getTime();
+        var time=(end-start)/1000;
+        
+
+        document.getElementById("time").innerHTML=time+ "s";
+
+        shapeApperDelay();
+
+    }
+        
+
+	</script>
+	 
+	 
+	
+	</body>
+
+
+
+</html>
