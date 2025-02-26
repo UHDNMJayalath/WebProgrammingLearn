@@ -1,46 +1,16 @@
 <html>
 	<head>
-	<title> javascript Final Game</title>
+	<title>JavaScript Final Game</title>
 
-    <style type="text/css">
+   <link rel="stylesheet" type="text/css" href="style.css">
 
-        #shape{
-
-            width:100px;
-            height: 100px;
-            background-color: green;
-        }
-
-    </style>
-	
 	</head>
-
-
 	<body>
-	
-        
-    <div id="shape"></div >
 
-	<script type="text/javascript">
+        <p> You Get <span id="time">0</span> s</p>   
+        <div id="shape"></div>
 
-    var start =new Date().getTime();    
-	
-    document.getElementById("shape").onclick=function(){
+        <script type="text/javascript" src="script.js"></script>
 
-        document.getElementById("shape").style.display="none";
-
-        var end = new Date().getTime();
-        var time=(end-start)/1000;
-        alert(time);
-    }
-        
-
-	</script>
-	 
-	 
-	
 	</body>
-
-
-
 </html>
